@@ -22,7 +22,7 @@ fun mainLamp() {
     println(lamp2)
     lamp2.changeColor()
     println(lamp2)
-    lamp2.setIntensity(readInt("Introdueix la intensitat desitjada", 1, 5))
+    lamp2.setIntensity(readInt("Introdueix la intensitat desitjada\n", 1, 5))
     println(lamp2)
     lamp2.setLampOff()
     println(lamp2)
@@ -32,6 +32,6 @@ fun mainLamp() {
     println(lamp2)
     lamp2.setLampOn()
     println(lamp2)
-    lamp2.setIntensity(readInt("Introdueix la intensitat desitjada", 1, 5))
+    lamp2.setIntensity(readInt("Introdueix la intensitat desitjada\n", 1, 5))
     println(lamp2)
 }
