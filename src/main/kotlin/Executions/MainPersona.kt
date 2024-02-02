@@ -1,7 +1,7 @@
 package Executions
 import Models.Persona
 
-fun main(args: Array<String>) {
+fun mainPersona() {
     var persona1=Persona()
     var persona2=Persona("Manolito","Lopez Lopez")
     val persona3=Persona("89898989Z", "Pepito","Ramirez Ramirez", 18, false)

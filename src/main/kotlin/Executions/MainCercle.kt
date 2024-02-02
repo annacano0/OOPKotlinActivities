@@ -4,7 +4,7 @@ import Utilities.readFloat
 import Utilities.readInt
 import Utilities.readWord
 
-fun main(){
+fun mainCercle(){
     var exit=false
     var cercle:Cercle=Cercle()
     do {

@@ -2,7 +2,7 @@ package Executions
 import Models.Lamp
 import Utilities.readInt
 
-fun main() {
+fun mainLamp() {
     var lamp1: Lamp =Lamp("menjador")
     lamp1.setLampOn()
     println(lamp1)
