@@ -51,7 +51,7 @@ This activity has the next files:
 
 This is the UML class diagram for this activity: 
 
-![Activitat8UML](IMG_README/Captura%20de%20pantalla%202024-01-11%20190942.png)
+![Activitat8UML](OOPreadme/Activitat8UML.png)
 
 ---
 
