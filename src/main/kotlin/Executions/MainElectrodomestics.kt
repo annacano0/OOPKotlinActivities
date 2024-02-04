@@ -36,7 +36,11 @@ fun mainElectrodomestics(){
     println("-Televisors:\n-Preu Base: "+preuBaseTelevisors+"\n-Preu Total: "+preuTotalTelevisors+"\n")
 
 }
-
+/**
+ * Calculates the total base price of all electrodomestic objects in the given array.
+ * @param array Array of Electrodomestic objects
+ * @return Total base price of all electrodomestics
+ */
 fun calculateAllElectrodomesticsBaseP(array:Array<Electrodomestic>):Float{
     var total=0f
     for (element in array){
@@ -44,7 +48,11 @@ fun calculateAllElectrodomesticsBaseP(array:Array<Electrodomestic>):Float{
     }
     return total
 }
-
+/**
+ * Calculates the total price of all electrodomestic objects, including additional costs, in the given array.
+ * @param array Array of Electrodomestic objects
+ * @return Total price of all electrodomestics
+ */
 fun calculateAllElectrodomesticsTotal(array: Array<Electrodomestic>): Float {
     var total = 0f
     for (element in array) {
@@ -62,7 +70,6 @@ fun calculatePreuBaseRentadores(array:Array<Electrodomestic>):Float{
     for (element in array){
         // Check if the element is an instance of Rentadora and add its base price to the total
         if (element is Rentadora) total += element.getPreuBaseValue()
-
     }
     return total
 }
