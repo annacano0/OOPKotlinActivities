@@ -18,7 +18,7 @@ The structure of the project is divided in 3 packages: Executions, Models and Ut
 - [Utilities](src/main/kotlin/Utilities): contains a utilities library and a console colors library.
 
 
-##Activitat 4
+## Activitat 4
 
 This activity has the next files: 
 - [MainPersona.kt](src/main/kotlin/Executions/MainPersona.kt) 
@@ -27,7 +27,7 @@ This activity has the next files:
 - [Cercle.kt](src/main/kotlin/Models/Cercle.kt) 
 
 
-##Activitat 6
+## Activitat 6
 
 This activity has the next files: 
 - [MainPasta.kt](src/main/kotlin/Executions/MainPasta.kt) 
@@ -35,13 +35,13 @@ This activity has the next files:
 - [Pasta.kt](src/main/kotlin/Models/Pasta.kt) 
 - [Beguda.kt](src/main/kotlin/Models/Beguda.kt) 
 
-##Activitat 7
+## Activitat 7
 
 This activity has the next files: 
 - [MainLamp.kt](src/main/kotlin/Executions/MainLamp.kt) 
 - [Lamp.kt](src/main/kotlin/Models/Lamp.kt) 
 
-##Activitat 8
+## Activitat 8
 
 This activity has the next files: 
 - [MainElectrodomestics.kt](src/main/kotlin/Executions/MainElectrodomestics.kt) 
