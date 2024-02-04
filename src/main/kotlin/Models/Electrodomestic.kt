@@ -31,17 +31,17 @@ open class Electrodomestic {
             else -> 0f
         }
     }
-    public fun setColor(color:String){
+    public fun setColorValue(color:String){
         var colorOptions=arrayOf("blanc", "platejat", "color")
         if(colorOptions.indexOf(color.lowercase())!=-1) this.color=color
     }
-    public fun setPreuBase(preuBase:Float){
+    public fun setPreuBaseValue(preuBase:Float){
         this.preuBase=preuBase
     }
-    public fun getPreuBase(): Float {
+    public fun getPreuBaseValue(): Float {
         return this.preuBase
     }
-    public open fun getPreuFinal():Float{
+    public open fun getPreuFinalValue():Float{
         var preuFinal=0f
         return this.preuBase+calculatePriceConsum()+calculatePriceWeigth()
     }

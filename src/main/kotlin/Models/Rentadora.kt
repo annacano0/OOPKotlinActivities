@@ -6,7 +6,7 @@ class Rentadora:Electrodomestic {
             this.carrega=carrega
     }
 
-    override public fun getPreuFinal():Float{
+    override public fun getPreuFinalValue():Float{
         var preuFinal=0f
         return super.preuBase+calculatePriceConsum()+calculatePriceWeigth()+calculatePriceCarrega()
     }

@@ -6,7 +6,7 @@ class Televisio: Electrodomestic {
     constructor(productId:String ,preuBase:Float, color:String, consum:Char, pes:Float, mida:Int) : super(productId, preuBase, color, consum, pes) {
         this.mida=mida
     }
-    override public fun getPreuFinal():Float{
+    override public fun getPreuFinalValue():Float{
         var preuFinal=preuBase
         return preuBase+calculatePriceConsum()+calculatePriceWeigth()+calculatePriceMida()
     }

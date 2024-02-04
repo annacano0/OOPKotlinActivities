@@ -19,7 +19,7 @@ fun mainElectrodomestics(){
     )
 
     for (element in arrayElectrodomestics){
-        print(element)
+        println(element)
     }
 
     var preuBaseAllElectrodomestics=calculateAllElectrodomesticsBaseP(arrayElectrodomestics)
@@ -39,7 +39,7 @@ fun mainElectrodomestics(){
 fun calculateAllElectrodomesticsBaseP(array:Array<Electrodomestic>):Float{
     var total=0f
     for (element in array){
-        total+=element.getPreuBase()
+        total+=element.getPreuBaseValue()
     }
     return total
 }
@@ -47,7 +47,7 @@ fun calculateAllElectrodomesticsBaseP(array:Array<Electrodomestic>):Float{
 fun calculateAllElectrodomesticsTotal(array: Array<Electrodomestic>): Float {
     var total = 0f
     for (element in array) {
-        total += element.getPreuFinal()
+        total += element.getPreuFinalValue()
     }
     return total
 }
@@ -55,7 +55,7 @@ fun calculateAllElectrodomesticsTotal(array: Array<Electrodomestic>): Float {
 fun calculatePreuBaseRentadores(array:Array<Electrodomestic>):Float{
     var total=0f
     for (element in array){
-        if (element is Rentadora) total += element.getPreuBase()
+        if (element is Rentadora) total += element.getPreuBaseValue()
 
     }
     return total
@@ -64,7 +64,7 @@ fun calculatePreuBaseRentadores(array:Array<Electrodomestic>):Float{
 fun calculatePreuTotalRentadores(array: Array<Electrodomestic>): Float {
     var total = 0f
     for (element in array) {
-       if (element is Rentadora) total += element.getPreuFinal()
+       if (element is Rentadora) total += element.getPreuFinalValue()
     }
     return total
 }
@@ -72,7 +72,7 @@ fun calculatePreuTotalRentadores(array: Array<Electrodomestic>): Float {
 fun calculatePreuBaseTelevisors(array: Array<Electrodomestic>): Float {
     var total = 0f
     for (element in array) {
-        if (element is Televisio) total += element.getPreuBase()
+        if (element is Televisio) total += element.getPreuBaseValue()
     }
     return total
 }
@@ -80,7 +80,7 @@ fun calculatePreuBaseTelevisors(array: Array<Electrodomestic>): Float {
 fun calculatePreuTotalTelevisors(array: Array<Electrodomestic>): Float {
     var total = 0f
     for (element in array) {
-        if (element is Televisio) total += element.getPreuFinal()
+        if (element is Televisio) total += element.getPreuFinalValue()
     }
     return total
 }
