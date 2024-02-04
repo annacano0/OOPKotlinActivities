@@ -7,7 +7,7 @@ fun main() {
 var exit=false
     var userOption=0
     do {
-        userOption= readInt("Activities menu:\n1.Execute Persona\n2.Execute Cercle\n3.Execute Pasta\n4.Execute Beguda\n5.Execute Lamp\n6.Execute Electrodomestics\n7.Exit", 1, 7)
+        userOption= readInt("Activities menu:\n1.Execute Persona\n2.Execute Cercle\n3.Execute Pasta\n4.Execute Beguda\n5.Execute Lamp\n6.Execute Electrodomestics\n7.Exit\n", 1, 7)
         when (userOption){
             1-> mainPersona()
             2-> mainCercle()
