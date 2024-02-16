@@ -8,8 +8,11 @@ class CompteCorrent:CompteBancari, Liquidable {
     override var messageliquidacio:String="Liquidació efectuada \nNo torni a comptar amb aquests serveis >:("
 
 
-    constructor(nomCompte:String, saldo:Float, comissionManteniment:Float):super(nomCompte, saldo){
+    constructor(nomCompte:Int, saldo:Float, comissionManteniment:Float):super(nomCompte, saldo){
         this.comissionManteniment=comissionManteniment
+    }
+    override fun getNomCompte():Int{
+        return this.nomCompte
     }
 
     override fun getMessageLiquidacio(): String {

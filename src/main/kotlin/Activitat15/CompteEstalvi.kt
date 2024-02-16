@@ -6,12 +6,15 @@ class CompteEstalvi:CompteBancari,Liquidable {
     private var interes:Float
     override var messageliquidacio:String="Liquidació efectuada \nMoltes gràcies per haber confiat en nosaltres"
 
-    constructor(nomCompte:String, saldo:Float, interes:Float):super(nomCompte, saldo){
+    constructor(nomCompte:Int, saldo:Float, interes:Float):super(nomCompte, saldo){
         this.interes=interes
     }
 
     public fun setInteres(interes:Float){
         this.interes=interes/100
+    }
+    override fun getNomCompte():Int{
+        return this.nomCompte
     }
 
     override fun getMessageLiquidacio(): String {

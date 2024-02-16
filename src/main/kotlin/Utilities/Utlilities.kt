@@ -92,3 +92,40 @@ fun readWord(pMessageIn: String): String{
 
     return outputValue
 }
+
+/**
+ * This method can be used to read a Si/No string value from the user through keyboard using java.util.Scanner
+ * and returns boolean
+ * @author annacano0
+ * @since 22/12/2023
+ * @param pMessageIn Input message to be shown to the user
+ * @param pMin Min accepted value
+ * @param pMax Max accepted value
+ * @return outputValue Output value (boolean)
+ */
+fun readStringSiNo(pMessageIn: String): Boolean {
+    val scan= Scanner(System.`in`)
+    var inputCorrecte: Boolean = true
+    var inputUsuari: String = ""
+    var outputValue: Boolean = false
+    do {
+        println(pMessageIn)
+        if (scan.hasNextLine()) {
+            inputCorrecte = true
+            inputUsuari = scan.nextLine().lowercase()
+            if (inputUsuari == "si") {
+                outputValue = true
+            } else if (inputUsuari == "no") {
+                outputValue = false
+            } else {
+                println("Incorrect data type")
+                inputCorrecte = false
+            }
+        } else {
+            scan.nextLine()
+            println("Value is not an option")
+            inputCorrecte = false
+        }
+    } while (!inputCorrecte)
+    return outputValue
+}
