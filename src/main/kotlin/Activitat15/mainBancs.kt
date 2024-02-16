@@ -13,8 +13,8 @@ fun main(){
        var userOption= readInt("1.Crear compte corrent\n2.Crear compte estalvi\n3.Ingressar,\n4.Consultar saldo\n5.Retirar diners de compte corrent\n6.Liquidar compte\n7.Sortir", 1, 7)
 
         when (userOption){
-           1 -> crearComteCorrent(userAccount)
-           2 -> crearCompteEstalvi(userAccount)
+           1 -> crearComteCorrent(bankAccounts)
+           2 -> crearCompteEstalvi(bankAccounts)
            3 -> ingressarACompte(userAccount)
             4 -> consultarSaldo(userAccount)
             5 -> RetirarDiners(userAccount)
